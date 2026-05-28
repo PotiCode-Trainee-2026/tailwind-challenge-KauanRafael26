@@ -9,13 +9,13 @@
   <body>
     <nav class="w-screen h-20 bg-purple-950">
       <div class="flex justify-around">
-        <div class="flex items-center justify-between h-20 w-29">
+        <div class="flex items-center justify-between h-20 w-38">
           <a href=""><img src="src/assets/corebook-logo.png" alt="" class="h-10 hover:scale-110 transition-all duration-200 ease"></a>
-          <p class="font-serif text-white font-bold"><a href="">CoreBook</a></p>
+          <p class="font-serif text-white font-bold text-2xl"><a href="">CoreBook</a></p>
         </div>
 
         <div class="flex items-center">
-          <ul class="flex justify-between w-70">
+          <ul class="flex justify-between gap-4.5">
             <li class="text-gray-400 group relative">
               <a href="" class="hover:text-white transition-all duration-200 ease">Shop</a>
               <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -38,8 +38,19 @@
           </ul>
         </div>
 
-        <div>
-          <img src="" alt="">
+        <div class="flex items-center gap-3">
+          <a href="">
+            <button class="flex items-center text-white gap-1.5 pt-1.5 pb-1.5 pr-3 pl-3 text-sm rounded-lg hover:bg-purple-500 transition duration-300 ease cursor-pointer">
+              <img src="src/assets/shop-cart.png" alt="" class="h-3.5">
+              Cart
+            </button>
+          </a>
+
+          <a href="">
+            <button class="text-white pt-1.5 pb-1.5 pr-3 pl-3 rounded-lg bg-purple-500 text-sm hover:bg-purple-700 transition-all duration-300 ease cursor-pointer">
+              Shop now
+            </button>
+          </a>
         </div>
       </div>
     </nav>
