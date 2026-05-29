@@ -1,86 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="src/assets/laptop-favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreTop</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoreTop</title>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
           },
         },
-      },
-    }
-  </script>
-</head>
+      }
+    </script>
+  </head>
 
-<!-- Fundo escuro -->
-<body class="bg-[#0b0514] text-white font-sans antialiased min-h-screen">
+  <!-- Fundo escuro -->
+  <body class="bg-[#0b0514] text-white font-sans antialiased min-h-screen">
+    
+    <!-- Navbar -->
+    <nav class="w-full h-20 border-b border-white/5 fixed top-0 left-0 z-50 px-6 md:px-12 bg-[#0b0514]">
+      <div class="flex justify-between items-center h-full max-w-6xl mx-auto">
+        <div class="flex items-center gap-2">
+          <span class="w-6 h-6 rounded bg-purple-600 flex items-center justify-center font-bold text-xs">C</span>
+          <span class="font-bold text-base tracking-tight"><a href="#">CoreTop</a></span>
+        </div>
 
-  <!-- Navbar -->
-  <nav class="w-full h-20 border-b border-white/5 fixed top-0 left-0 z-50 px-6 md:px-12 bg-[#0b0514]">
-    <div class="flex justify-between items-center h-full max-w-6xl mx-auto">
-      <div class="flex items-center gap-2">
-        <span class="w-6 h-6 rounded bg-purple-600 flex items-center justify-center font-bold text-xs">C</span>
-        <span class="font-bold text-base tracking-tight"><a href="#">CoreTop</a></span>
+        <div class="hidden md:flex items-center">
+          <ul class="flex justify-between gap-8 text-xs font-medium tracking-wide">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shop</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Collections</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Craft</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <a href="#" class="text-gray-400 hover:text-white text-xs font-medium transition-colors">
+            Cart
+          </a>
+
+          <a href="#">
+            <button class="bg-purple-600 text-white font-medium py-2 px-4 rounded text-xs hover:bg-purple-700 transition-colors">
+              Shop now
+            </button>
+          </a>
+        </div>
       </div>
+    </nav>
 
-      <div class="hidden md:flex items-center">
-        <ul class="flex justify-between gap-8 text-xs font-medium tracking-wide">
-          <li><a href="" class="text-gray-400 hover:text-white transition-colors">Shop</a></li>
-          <li><a href="" class="text-gray-400 hover:text-white transition-colors">Collections</a></li>
-          <li><a href="" class="text-gray-400 hover:text-white transition-colors">Craft</a></li>
-          <li><a href="" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-        </ul>
-      </div>
+    <div class="h-20"></div>
 
-      <div class="flex items-center gap-5">
-        <a href="" class="text-gray-400 hover:text-white text-xs font-medium transition-colors">
-          Cart
-        </a>
-        <a href="">
-          <button class="bg-purple-600 text-white font-medium py-2 px-4 rounded text-xs hover:bg-purple-700 transition-colors">
-            Shop now
+    <!-- Hero section -->
+    <main class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col gap-6">
+        <span class="text-xs font-semibold tracking-wider text-purple-400 uppercase">
+          New 2026 lineup - Limited drop
+        </span>
+
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+          Laptops for <span class="text-purple-300">creators</span> who refuse to compromise.
+        </h1>
+
+        <p class="text-gray-400 text-sm md:text-base max-w-md leading-relaxed font-light">
+          CCoreBook engineers ultralight machines in obsidian aluminum and violet anodized finishes — built to outpace every workflow you throw at them.
+        </p>
+
+        <div class="flex items-center gap-4 pt-2">
+          <button class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors">
+            Explore the lineup
           </button>
-        </a>
-      </div>
-    </div>
-  </nav>
 
-  <div class="h-20"></div>
+          <button class="bg-transparent hover:bg-white/5 border border-white/20 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors">
+            View specs
+          </button>
+        </div>
 
-  <!-- Hero Section -->
-  <main class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24 grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <div class="flex flex-col gap-6">
-      <span class="text-xs font-semibold tracking-wider text-purple-400 uppercase">
-        New 2026 lineup - Limited drop
-      </span>
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-        Laptops for <span class="text-purple-300">creators</span> who refuse to compromise.
-      </h1>
-      <p class="text-gray-400 text-sm md:text-base max-w-md leading-relaxed font-light">
-        CoreTop engineers ultralight machines in obsidian aluminum and violet anodized finishes - built to outpace every workflow you throw at them.
-      </p>
-      <div class="flex items-center gap-4 pt-2">
-        <button class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors">
-          Explore the lineup
-        </button>
-        <button class="bg-transparent hover:bg-white/5 border border-white/20 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors">
-          View specs
-        </button>
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </main>
-</body>
+        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 mt-4 max-w-sm text-sm">
+          <div>
+            <p class="font-bold">120k+</p>
+            <p class="text-[11px] text-gray-500 mt-0.5">Laptops shipped</p>
+          </div>
 
+          <div>
+            <p class="font-bold">4.9 ★</p>
+            <p class="text-[11px] text-gray-500 mt-0.5">Avg. rating</p>
+          </div>
+
+          <div>
+            <p class="font-bold">48</p>
+            <p class="text-[11px] text-gray-500 mt-0.5">Countries</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center">
+        <div class="rounded-lg bg-white/5 border border-white/10 w-full aspect-auto">
+          <img class="rounded" src="src/assets/hero-laptop.jpg" alt="Laptop">
+        </div>
+      </div>
+    </main>
+
+    <!-- Section 1: the lineup -->
+    <section class="max-w-6xl mx-auto px-6 md:px-12 border-t border-white/10">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10">
+        <div>
+          <p class="text-[11px] font-semibold tracking-wider text-purple-400 uppercase mb-2">The Lineup</p>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Three laptops. One philosophy</h2>
+        </div>
+
+        <p class="text-gray-400 text-xs max-w-xs font-light leading-relaxed">
+          Each CoreTop is assembled by hand in our Lisbon atelier. No two are identical.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white/[0.02] border border-white/10 rounded-lg p-5 flex flex-col justify-between">
+          <div>
+            <p class="text-[10px] tracking-wider text-gray-500 font-medium uppercase mb-4">Ultrabook · 14"</p>
+            <div class="w-full aspect-video rounded bg-white/5 border border-white/5 mb-4"></div>
+            <h3 class="text-base font-bold mb-1">Violet Pro 14</h3>
+            <p class="text-xs text-gray-400 font-light mb-6">Anodized violet aluminum, 32GB RAM, 1TB SSD, 18-hour battery.</p>
+          </div>
+
+          <div class="flex justify-between items-center pt-3 border-t border-white/5 text-xs">
+            <span class="font-bold">$1,899</span>
+            <button class="text-purple-400 hover:text-purple-300 transition-colors">Add to cart</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white/[0.02] border border-white/10 rounded-lg p-5 flex flex-col justify-between">
+          <div>
+            <p class="text-[10px] tracking-wider text-gray-500 font-medium uppercase mb-4">Workstation · 16"</p>
+            <div class="w-full aspect-video rounded bg-white/5 border border-white/5 mb-4"></div>
+            <h3 class="text-base font-bold mb-1">Obsidian Edge 16</h3>
+            <p class="text-xs text-gray-400 font-light mb-6">Matte black chassis with a single purple-foil hinge. Built for render.</p>
+          </div>
+
+          <div class="flex justify-between items-center pt-3 border-t border-white/5 text-xs">
+            <span class="font-bold">$2,499</span>
+            <button class="text-purple-400 hover:text-purple-300 transition-colors">Add to cart</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white/[0.02] border border-white/10 rounded-lg p-5 flex flex-col justify-between">
+          <div>
+            <p class="text-[10px] tracking-wider text-gray-500 font-medium uppercase mb-4">Featherweight · 13"</p>
+            <div class="w-full aspect-video rounded bg-white/5 border border-white/5 mb-4"></div>
+            <h3 class="text-base font-bold mb-1">Violet Pro 14</h3>
+            <p class="text-xs text-gray-400 font-light mb-6">Anodized violet aluminum, 32GB RAM, 1TB SSD, 18-hour battery.</p>
+          </div>
+
+          <div class="flex justify-between items-center pt-3 border-t border-white/5 text-xs">
+            <span class="font-bold">$1,899</span>
+            <button class="text-purple-400 hover:text-purple-300 transition-colors">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section two: engineering -->
+    <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 border-t border-white/10 text-center">
+      <p class="text"></p>
+    </section>
+
+  </body>
 </html>
